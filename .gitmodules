@@ -19,3 +19,6 @@
 [submodule "pack/vendor/start/vim-surround"]
 	path = pack/vendor/start/vim-surround
 	url = git@github.com:tpope/vim-surround.git
+[submodule "pack/vendor/opt/vimtex"]
+	path = pack/vendor/opt/vimtex
+	url = git@github.com:lervag/vimtex.git

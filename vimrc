@@ -1,3 +1,4 @@
+syntax on
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -6,7 +7,7 @@ set title
 
 filetype plugin indent on
 
-" Split opens on natural sides
+" Split opens on natural side
  set splitright
 
 set hlsearch

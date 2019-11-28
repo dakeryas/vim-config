@@ -22,3 +22,6 @@
 [submodule "pack/vendor/opt/vimtex"]
 	path = pack/vendor/opt/vimtex
 	url = git@github.com:lervag/vimtex.git
+[submodule "pack/user/opt/CurtineIncSw.vim"]
+	path = pack/user/opt/CurtineIncSw.vim
+	url = git@github.com:dakeryas/CurtineIncSw.vim.git

@@ -28,7 +28,7 @@ function! <SID>StripTrailingWhitespaces()
 endfun
 
 " Using file extension
-autocmd BufWritePre *.h,*.c,*cc,*.cxx,*.hh,*.cpp,*.hpp,*.tex,*.sty,CMakeLists.txt,*.py,*.sh,*.csh,*.zsh,*.f90,*.yml :call <SID>StripTrailingWhitespaces()
+autocmd BufWritePre *.vim,*.h,*.c,*cc,*.cxx,*.hh,*.cpp,*.hpp,*.tex,*.sty,CMakeLists.txt,*.py,*.sh,*.csh,*.zsh,*.f90,*.yml :call <SID>StripTrailingWhitespaces()
 
 " Automatically open quickfix window for :make :vimgrep...
 autocmd QuickFixCmdPost [^l]* nested cwindow

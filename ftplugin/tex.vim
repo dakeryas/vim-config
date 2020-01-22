@@ -1,5 +1,4 @@
 set linebreak
-set textwidth=120
 
 packadd! vimtex
 call vimtex#init()

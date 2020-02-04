@@ -19,6 +19,13 @@ set wildmenu
 " Gutentags plugin
 let g:gutentags_cache_dir = "~/.cache/gutentags/"
 let g:gutentags_ctags_extra_args = ['--fields=+iaS', '--extra=+q', '--c++-kinds=+p']
+
+" FZF plugin
+let s:fzf_vim = "/usr/share/doc/fzf/examples/fzf.vim"
+if filereadable(s:fzf_vim)
+    exec 'source '.s:fzf_vim
+endif
+
 set path+=**
 
 " functions

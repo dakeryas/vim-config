@@ -25,3 +25,6 @@
 [submodule "pack/user/opt/CurtineIncSw.vim"]
 	path = pack/user/opt/CurtineIncSw.vim
 	url = https://github.com/dakeryas/CurtineIncSw.vim.git
+[submodule "pack/vendor/start/fzf.vim"]
+	path = pack/vendor/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git

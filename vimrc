@@ -16,10 +16,12 @@ set hlsearch
 set wildmode=longest:full,full
 set wildmenu
 
+" Gutentags plugin
 let g:gutentags_cache_dir = "~/.cache/gutentags/"
 let g:gutentags_ctags_extra_args = ['--fields=+iaS', '--extra=+q', '--c++-kinds=+p']
 set path+=**
 
+" functions
 function! <SID>StripTrailingWhitespaces()
     let l = line(".")
     let c = col(".")

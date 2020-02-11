@@ -1,3 +1,5 @@
+set background=dark
+
 syntax on
 set tabstop=4
 set shiftwidth=4
@@ -20,12 +22,6 @@ set wildmenu
 let g:gutentags_cache_dir = "~/.cache/gutentags/"
 let g:gutentags_ctags_extra_args = ['--fields=+iaS', '--extra=+q', '--c++-kinds=+p']
 
-" FZF plugin
-let s:fzf_vim = "/usr/share/doc/fzf/examples/fzf.vim"
-if filereadable(s:fzf_vim)
-    exec 'source '.s:fzf_vim
-endif
-
 set path+=**
 
 " functions
@@ -45,6 +41,3 @@ autocmd QuickFixCmdPost    l* nested lwindow
 
 " Open tag with alt+] in a vertical split window
 map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
-
-nnoremap <F3> :update<CR>
-inoremap <F3> <ESC>:update<CR>l

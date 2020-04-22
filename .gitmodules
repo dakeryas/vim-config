@@ -28,3 +28,6 @@
 [submodule "pack/user/opt/CurtineIncSw.vim"]
 	path = pack/user/opt/CurtineIncSw.vim
 	url = https://github.com/dakeryas/CurtineIncSw.vim.git
+[submodule "pack/user/start/BlinkSearch.vim"]
+	path = pack/user/start/BlinkSearch.vim
+	url = https://github.com/dakeryas/BlinkSearch.vim.git

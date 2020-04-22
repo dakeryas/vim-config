@@ -1,24 +1,27 @@
-[submodule "pack/vendor/start/AnsiEsc.vim"]
-	path = pack/vendor/start/AnsiEsc.vim
-	url = https://github.com/vim-scripts/AnsiEsc.vim
-[submodule "pack/vendor/start/asyncrun.vim"]
-	path = pack/vendor/start/asyncrun.vim
-	url = https://github.com/skywind3000/asyncrun.vim.git
 [submodule "pack/vendor/start/vim-commentary"]
 	path = pack/vendor/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
 [submodule "pack/vendor/start/vim-fugitive"]
 	path = pack/vendor/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "pack/vendor/start/vim-gutentags"]
-	path = pack/vendor/start/vim-gutentags
-	url = https://github.com/ludovicchabant/vim-gutentags.git
-[submodule "pack/vendor/start/vim-ripgrep"]
-	path = pack/vendor/start/vim-ripgrep
-	url = https://github.com/jremmen/vim-ripgrep.git
 [submodule "pack/vendor/start/vim-surround"]
 	path = pack/vendor/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "pack/vendor/start/vim-abolish"]
+	path = pack/vendor/start/vim-abolish
+	url = https://github.com/tpope/vim-abolish
+[submodule "pack/vendor/start/vim-ripgrep"]
+	path = pack/vendor/start/vim-ripgrep
+	url = https://github.com/jremmen/vim-ripgrep.git
+[submodule "pack/vendor/start/vim-gutentags"]
+	path = pack/vendor/start/vim-gutentags
+	url = https://github.com/ludovicchabant/vim-gutentags.git
+[submodule "pack/vendor/start/AnsiEsc.vim"]
+	path = pack/vendor/start/AnsiEsc.vim
+	url = https://github.com/vim-scripts/AnsiEsc.vim
+[submodule "pack/vendor/start/asyncrun.vim"]
+	path = pack/vendor/start/asyncrun.vim
+	url = https://github.com/skywind3000/asyncrun.vim.git
 [submodule "pack/vendor/opt/vimtex"]
 	path = pack/user/opt/vimtex
 	url = https://github.com/dakeryas/vimtex.git

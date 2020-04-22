@@ -22,6 +22,9 @@ filetype plugin indent on
  execute printf("nnoremap <silent> N N:call HLNext(%d, %d)<cr>", s:blink_length, s:blink_freq)
  execute printf("nnoremap <silent> * *:call HLNext(%d, %d)<cr>", s:blink_length, s:blink_freq)
 
+ " Disable legacy Ex mode and open command line history instead
+ nnoremap Q q:
+
  " Bash-like tab completion
  set wildmode=longest:full,full
  set wildmenu

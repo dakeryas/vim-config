@@ -12,32 +12,40 @@ filetype plugin indent on
 " Split opens on natural side
  set splitright
 
-set hlsearch
+ " Highlighting all searches
+ set hlsearch
 
-" Bash-like tab completion
-set wildmode=longest:full,full
-set wildmenu
+ " Map n, N and * to blink the match using BlinkSearch.vim
+ let s:blink_length = 500
+ let s:blink_freq = 50
+ execute printf("nnoremap <silent> n n:call HLNext(%d, %d)<cr>", s:blink_length, s:blink_freq)
+ execute printf("nnoremap <silent> N N:call HLNext(%d, %d)<cr>", s:blink_length, s:blink_freq)
+ execute printf("nnoremap <silent> * *:call HLNext(%d, %d)<cr>", s:blink_length, s:blink_freq)
 
-" Gutentags plugin
-let g:gutentags_cache_dir = "~/.cache/gutentags/"
-let g:gutentags_ctags_extra_args = ['--fields=+iaS', '--extra=+q', '--c++-kinds=+p']
+ " Bash-like tab completion
+ set wildmode=longest:full,full
+ set wildmenu
 
-set path+=**
+ " Gutentags plugin
+ let g:gutentags_cache_dir = "~/.cache/gutentags/"
+ let g:gutentags_ctags_extra_args = ['--fields=+iaS', '--extra=+q', '--c++-kinds=+p']
 
-" functions
-function! <SID>StripTrailingWhitespaces()
-    let l = line(".")
-    let c = col(".")
-    %s/\s\+$//e
-    call cursor(l, c)
-endfun
+ set path+=**
 
-" Using file extension
-autocmd BufWritePre *.vim,*.h,*.c,*cc,*.cxx,*.hh,*.cpp,*.hpp,*.tex,*.sty,CMakeLists.txt,*.py,*.sh,*.csh,*.zsh,*.f90,*.yml :call <SID>StripTrailingWhitespaces()
+ " functions
+ function! <SID>StripTrailingWhitespaces()
+     let l = line(".")
+     let c = col(".")
+     %s/\s\+$//e
+     call cursor(l, c)
+ endfun
 
-" Automatically open quickfix window for :make :vimgrep...
-autocmd QuickFixCmdPost [^l]* nested cwindow
-autocmd QuickFixCmdPost    l* nested lwindow
+ " Using file extension
+ autocmd BufWritePre *.vim,*.h,*.c,*cc,*.cxx,*.hh,*.cpp,*.hpp,*.tex,*.sty,CMakeLists.txt,*.py,*.sh,*.csh,*.zsh,*.f90,*.yml :call <SID>StripTrailingWhitespaces()
 
-" Open tag with alt+] in a vertical split window
-map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+ " Automatically open quickfix window for :make :vimgrep...
+ autocmd QuickFixCmdPost [^l]* nested cwindow
+ autocmd QuickFixCmdPost    l* nested lwindow
+
+ " Open tag with alt+] in a vertical split window
+ map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>

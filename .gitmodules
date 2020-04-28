@@ -31,3 +31,9 @@
 [submodule "pack/user/start/BlinkSearch.vim"]
 	path = pack/user/start/BlinkSearch.vim
 	url = https://github.com/dakeryas/BlinkSearch.vim.git
+[submodule "pack/vendor/start/vim-plugin-ruscmd"]
+	path = pack/vendor/start/vim-plugin-ruscmd
+	url = https://github.com/powerman/vim-plugin-ruscmd
+[submodule "pack/vendor/start/repeat"]
+	path = pack/vendor/start/repeat
+	url = https://tpope.io/vim/repeat.git

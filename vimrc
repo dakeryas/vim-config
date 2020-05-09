@@ -29,6 +29,9 @@ filetype plugin indent on
  set wildmode=longest:full,full
  set wildmenu
 
+ " AsyncRun saves all buffers upon running
+ let g:asyncrun_save=2
+
  " Gutentags plugin
  let g:gutentags_cache_dir = "~/.cache/gutentags/"
  let g:gutentags_ctags_extra_args = ['--fields=+iaS', '--extra=+q', '--c++-kinds=+p']
@@ -44,7 +47,7 @@ filetype plugin indent on
  endfun
 
  " Using file extension
- autocmd BufWritePre *.vim,*.h,*.c,*cc,*.cxx,*.hh,*.cpp,*.hpp,*.tex,*.sty,CMakeLists.txt,*.py,*.sh,*.csh,*.zsh,*.f90,*.yml,*.md :call <SID>StripTrailingWhitespaces()
+ autocmd BufWritePre *.vim,*.h,*.c,*cc,*.cxx,*.hh,*.cpp,*.hpp,*.tex,*.sty,CMakeLists.txt,*.py,*.sh,*.csh,*.zsh,*.f90,*.yml,*.md,*.cue :call <SID>StripTrailingWhitespaces()
 
  " Automatically open quickfix window for :make :vimgrep...
  autocmd QuickFixCmdPost [^l]* nested cwindow

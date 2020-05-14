@@ -13,7 +13,8 @@ function! InsertGates()
   execute "normal! i#ifndef " . gatename
   execute "normal! o#define " . gatename . " "
   put =''
-  execute "normal! Go#endif /* " . gatename . " */"
+  execute "normal! Go"
+  execute "normal! o#endif /* " . gatename . " */"
   call setpos(".", save_pos)
 endfunction
 

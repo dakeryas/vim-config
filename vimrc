@@ -25,6 +25,9 @@ filetype plugin indent on
  " Disable legacy Ex mode and open command line history instead
  nnoremap Q q:
 
+" Make first word of line accessible for AZERTY keyboard
+ noremap è ^
+
  " Bash-like tab completion
  set wildmode=longest:full,full
  set wildmenu

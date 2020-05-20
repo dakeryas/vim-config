@@ -4,7 +4,7 @@ let g:ale_linters={
       \ 'cpp': [ 'clang++' ]
       \ }
 let g:ale_cpp_clang_executable = 'clang++'
-let s:compiler_options = '-std=c++17 -Wall -Wextra -pedantic -I./include -I../include -I$KASPER_INSTALL/include -I$HOME/Software/Geant4/include/Geant4/'
+let s:compiler_options = '-std=c++17 -Wall -Wextra -pedantic -I./include -I../include -I$ROOTSYS/include -I$HOME/Software/Geant4/include/Geant4/ -I$HOME/Software/RicochetSim/include'
 let g:ale_cpp_clang_options = s:compiler_options
 let g:ale_cpp_gcc_options = s:compiler_options
 

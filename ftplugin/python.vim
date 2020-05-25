@@ -7,3 +7,5 @@ let g:ale_python_pylint_options='--disable=C0111,C0301'
 if !exists("current_compiler")
   compiler python3
 endif
+
+noremap <silent> <F5> :update \| AsyncRun python3 % <CR>

@@ -1,5 +1,7 @@
 set linebreak
 
+set complete-=i
+
 packadd! vimtex
 call vimtex#init()
 

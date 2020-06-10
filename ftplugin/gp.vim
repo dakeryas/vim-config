@@ -1,1 +1,1 @@
-map <F5> :update \| AsyncRun gnuplot % <CR>
+noremap <silent> <F5> :update \| AsyncRun gnuplot % <CR>

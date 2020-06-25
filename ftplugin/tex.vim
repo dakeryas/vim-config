@@ -1,6 +1,7 @@
 set linebreak
 
 set complete-=i
+set wildignore+=*.aux,*.bbl,*.bcf,*.blg,*.fdb_latexmk,*.fls,*.gz,*.out,*.toc,*.xml
 
 packadd! vimtex
 call vimtex#init()

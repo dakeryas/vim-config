@@ -2,10 +2,8 @@ set cino=g0,+0
 
 packadd CurtineIncSw.vim
 
-let g:ale_cpp_clang_executable = 'clang++'
-let s:compiler_options = '-std=c++17 -Wall -Wextra -pedantic -I./include -I../include -I$KASPER_INSTALL/include -I$SOFTWARE_PATH/boost/include -I$SOFTWARE_PATH/Geant4/include/Geant4/'
-let g:ale_cpp_clang_options = s:compiler_options
-let g:ale_cpp_gcc_options = s:compiler_options
+" Ignore object files when completing filenames
+set wildignore+=*.o,*.d
 
 function! InsertGates()
   let save_pos = getpos(".")

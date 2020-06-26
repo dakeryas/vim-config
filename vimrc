@@ -34,6 +34,9 @@ filetype plugin indent on
  set wildmode=longest:full,full
  set wildmenu
 
+ " Ignore object files when completing filenames
+ set wildignore+=*.o,*.d
+
  " AsyncRun saves all buffers upon running
  let g:asyncrun_save=2
 

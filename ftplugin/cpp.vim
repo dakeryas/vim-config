@@ -2,9 +2,6 @@ set cino=g0,+0
 
 packadd CurtineIncSw.vim
 
-" Ignore object files when completing filenames
-set wildignore+=*.o,*.d
-
 function! InsertGates()
   let save_pos = getpos(".")
   let gatename = substitute(toupper(expand("%:t")), "\\.", "_", "g")

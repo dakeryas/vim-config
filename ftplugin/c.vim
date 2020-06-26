@@ -3,9 +3,6 @@ packadd CurtineIncSw.vim
 " Don't parse all includes when auto-completing
 set complete-=i
 
-" Ignore object files when completing filenames
-set wildignore+=*.o,*.d
-
 let g:ale_linters={
       \ 'c': [ 'clang', 'gcc' ]
       \ }

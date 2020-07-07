@@ -50,9 +50,6 @@ filetype plugin indent on
  nnoremap <silent> <leader>j :ALENext()<cr>
  nnoremap <silent> <leader>k :ALEPrevious()<cr>
 
- " Using file extension
- autocmd BufWritePre *.vim,*.h,*.c,*cc,*.cxx,*.hh,*.cpp,*.hpp,*.tex,*.sty,CMakeLists.txt,*akefile*,*.py,*.awk,*.sh,*.csh,*.zsh,*.f90,*.yml,*.md,*.cue :call <SID>StripTrailingWhitespaces()
-
  " Automatically open quickfix window for :make :vimgrep...
  autocmd QuickFixCmdPost [^l]* nested cwindow
  autocmd QuickFixCmdPost    l* nested lwindow

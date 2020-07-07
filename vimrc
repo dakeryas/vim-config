@@ -34,6 +34,8 @@ filetype plugin indent on
  set wildmode=longest:full,full
  set wildmenu
 
+ set path+=**
+
  " Ignore object files when completing filenames
  set wildignore+=*.o,*.d
 
@@ -43,19 +45,6 @@ filetype plugin indent on
  " Gutentags plugin
  let g:gutentags_cache_dir = "~/.cache/gutentags/"
  let g:gutentags_ctags_extra_args = ['--fields=+iaS', '--extra=+q', '--c++-kinds=+p']
-
- set path+=**
-
- " functions
- function! <SID>StripTrailingWhitespaces()
-     let l = line(".")
-     let c = col(".")
-     %s/\s\+$//e
-     call cursor(l, c)
- endfun
-
- " Using file extension
- autocmd BufWritePre *.vim,*.h,*.c,*cc,*.cxx,*.hh,*.cpp,*.hpp,*.tex,*.sty,CMakeLists.txt,*akefile*,*.py,*.awk,*.sh,*.csh,*.zsh,*.f90,*.yml,*.md,*.cue :call <SID>StripTrailingWhitespaces()
 
  " Automatically open quickfix window for :make :vimgrep...
  autocmd QuickFixCmdPost [^l]* nested cwindow

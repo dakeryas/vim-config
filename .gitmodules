@@ -37,3 +37,6 @@
 [submodule "pack/vendor/start/repeat"]
 	path = pack/vendor/start/repeat
 	url = https://tpope.io/vim/repeat.git
+[submodule "pack/user/start/StripTrailingSpaces.vim"]
+	path = pack/user/start/StripTrailingSpaces.vim
+	url = https://github.com/dakeryas/StripTrailingSpaces.vim.git

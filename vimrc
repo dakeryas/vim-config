@@ -45,6 +45,13 @@ filetype plugin indent on
  " Gutentags plugin
  let g:gutentags_cache_dir = "~/.cache/gutentags/"
  let g:gutentags_ctags_extra_args = ['--fields=+iaS', '--extra=+q', '--c++-kinds=+p']
+ 
+ " Move to next ALE error
+ nnoremap <silent> <leader>aj :ALENext()<cr>
+ nnoremap <silent> <leader>ak :ALEPrevious()<cr>
+
+ " Using file extension
+ autocmd BufWritePre *.vim,*.h,*.c,*cc,*.cxx,*.hh,*.cpp,*.hpp,*.tex,*.sty,CMakeLists.txt,*akefile*,*.py,*.awk,*.sh,*.csh,*.zsh,*.f90,*.yml,*.md,*.cue :call <SID>StripTrailingWhitespaces()
 
  " Automatically open quickfix window for :make :vimgrep...
  autocmd QuickFixCmdPost [^l]* nested cwindow

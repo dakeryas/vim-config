@@ -33,7 +33,7 @@
 	url = https://github.com/dakeryas/BlinkSearch.vim.git
 [submodule "pack/user/start/StripTrailingSpaces.vim"]
 	path = pack/user/start/StripTrailingSpaces.vim
-	url = https://github.com/dakeryas/StripTrailingSpaces.vim.git
+	url = https://github.com/dakeryas/StripTrailingSpaces.vim
 [submodule "pack/vendor/start/vim-plugin-ruscmd"]
 	path = pack/vendor/start/vim-plugin-ruscmd
 	url = https://github.com/powerman/vim-plugin-ruscmd

@@ -49,6 +49,3 @@ filetype plugin indent on
  " Automatically open quickfix window for :make :vimgrep...
  autocmd QuickFixCmdPost [^l]* nested cwindow
  autocmd QuickFixCmdPost    l* nested lwindow
-
- " Open tag with alt+] in a vertical split window
- map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>

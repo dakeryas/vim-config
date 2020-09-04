@@ -26,12 +26,6 @@ function! FileHeading()
   unlet s:line
 endfunction
 
-let g:ale_linters={
-      \ 'c': [ 'clang', 'gcc' ]
-      \ }
-
-let g:ale_c_parse_makefile = 1
-
 noremap <F4> :update \| AsyncRun make install <CR>
 noremap <F5> :update \| AsyncRun make <CR>
 noremap <F8> :update \| AsyncRun make debug install <CR>

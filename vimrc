@@ -27,8 +27,8 @@ filetype plugin indent on
 
 " AZERTY keyboard mappings
  inoremap jk <c-c>`^
- inoremap ç \
- noremap è ^
+ nnoremap ç \
+ nnoremap è ^
 
  " Bash-like tab completion
  set wildmode=longest:full,full

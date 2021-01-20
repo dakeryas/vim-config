@@ -1,4 +1,3 @@
-set textwidth=95
 setlocal spell
 
 " Hide in fold verbose email headers

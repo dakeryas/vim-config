@@ -22,8 +22,8 @@
 [submodule "pack/vendor/start/asyncrun.vim"]
 	path = pack/vendor/start/asyncrun.vim
 	url = https://github.com/skywind3000/asyncrun.vim.git
-[submodule "pack/vendor/opt/vimtex"]
-	path = pack/user/opt/vimtex
+[submodule "pack/vendor/start/vimtex"]
+	path = pack/vendor/start/vimtex
 	url = https://github.com/dakeryas/vimtex.git
 [submodule "pack/user/opt/CurtineIncSw.vim"]
 	path = pack/user/opt/CurtineIncSw.vim

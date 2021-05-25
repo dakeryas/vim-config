@@ -4,20 +4,35 @@ set complete-=i
 set wildignore+=*.aux,*.bbl,*.bcf,*.blg,*.fdb_latexmk,*.fls,*.gz,*.out,*.toc,*.xml
 set textwidth=95
 
-packadd! vimtex
-call vimtex#init()
+augroup save_file
+    autocmd! * <buffer>
+    autocmd CursorHold <buffer> update
+augroup END
 
-let g:vimtex_complete_close_braces = 1
-let g:vimtex_compiler_latexmk = {
-    \ 'build_dir' : './build/',
-    \ 'options' : [
-    \   '-pdf',
-    \   '-shell-escape',
-    \   '-verbose',
-    \   '-file-line-error',
-    \   '-synctex=1',
-    \   '-interaction=nonstopmode',
-    \ ],
-    \}
+" Reformat lines (getting the spacing correct) {{{
+fun! TeX_fmt()
+    if (getline(".") != "")
+    let save_cursor = getpos(".")
+        let op_wrapscan = &wrapscan
+        set nowrapscan
+        let par_begin = '^\(%D\)\=\s*\($\|\\label\|\\begin\|\\end\|\\[\|\\]\|\\\(sub\)*section\>\|\\item\>\|\\NC\>\|\\blank\>\|\\noindent\>\)'
+        let par_end   = '^\(%D\)\=\s*\($\|\\begin\|\\end\|\\[\|\\]\|\\place\|\\\(sub\)*section\>\|\\item\>\|\\NC\>\|\\blank\>\)'
+    try
+      exe '?'.par_begin.'?+'
+    catch /E384/
+      1
+    endtry
+        norm V
+    try
+      exe '/'.par_end.'/-'
+    catch /E385/
+      $
+    endtry
+    norm gq
+        let &wrapscan = op_wrapscan
+    call setpos('.', save_cursor)
+    endif
+endfun
 
-nnoremap <F5> :w\|VimtexCompile<CR>
+nnoremap Q :call TeX_fmt()<CR>
+" }}}

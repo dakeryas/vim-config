@@ -15,6 +15,9 @@ filetype plugin indent on
  " Highlighting all searches
  set hlsearch
 
+ " At least a few lines below or above the cursor
+ set scrolloff=2
+
  " Map n, N and * to blink the match using BlinkSearch.vim
  let s:blink_length = 500
  let s:blink_freq = 50

@@ -28,8 +28,9 @@ filetype plugin indent on
  " Disable legacy Ex mode and open command line history instead
  nnoremap Q q:
 
-" AZERTY keyboard mappings
+" Leave Insert but move back to last Insert mode cursor position (via mark ^)
  inoremap jk <ESC>`^
+" AZERTY keyboard mappings
  nnoremap ç \
  nnoremap è ^
 

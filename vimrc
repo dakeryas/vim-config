@@ -29,7 +29,7 @@ filetype plugin indent on
  nnoremap Q q:
 
 " AZERTY keyboard mappings
- inoremap jk <c-c>`^
+ inoremap jk <ESC>`^
  nnoremap ç \
  nnoremap è ^
 

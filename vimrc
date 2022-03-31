@@ -34,6 +34,9 @@ filetype plugin indent on
  nnoremap ç \
  nnoremap è ^
 
+ " Allow to type whilst showing matches, show menu even for one item
+set completeopt=longest,menuone
+
  " Bash-like tab completion
  set wildmode=longest:full,full
  set wildmenu

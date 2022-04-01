@@ -11,6 +11,8 @@ filetype plugin indent on
 
 " Split opens on natural side
  set splitright
+ " Mapping for vsf to expand as 'vert sf' only in command context
+ cnoreabbrev <expr> vsf getcmdtype() == ":" && getcmdline() == 'vsf' ? 'vert sf' : 'vsf'
 
  " Highlighting all searches
  set hlsearch

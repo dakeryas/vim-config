@@ -5,12 +5,14 @@ set complete-=i
 
 function! InsertGates()
   let save_pos = getpos(".")
-  let gatename = substitute(toupper(expand("%:t")), "\\.", "_", "g")
-  execute "normal! i#ifndef " . gatename
-  execute "normal! o#define " . gatename . " "
+  let l:gatename = substitute(expand("%:t"), "\\.", "_", "g")
+  let l:gatename = substitute(l:gatename, '\(\l\)\(\u\)', "\\1_\\2", "g")
+  let l:gatename = toupper(l:gatename)
+  execute "normal! i#ifndef " . l:gatename
+  execute "normal! o#define " . l:gatename . " "
   put =''
   execute "normal! Go"
-  execute "normal! o#endif /* " . gatename . " */"
+  execute "normal! o#endif /* " . l:gatename . " */"
   call setpos(".", save_pos)
 endfunction
 

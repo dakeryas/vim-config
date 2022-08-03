@@ -53,6 +53,8 @@ set wildignore+=*.o,*.d
 
 " AsyncRun saves all buffers upon running
 let g:asyncrun_save=2
+" AsyncRun calls :copen before with specified height
+let g:asyncrun_open = 12
 
 " Gutentags plugin
 let g:gutentags_cache_dir = "~/.cache/gutentags/"

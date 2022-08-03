@@ -1,7 +1,5 @@
 set cino=g0,+0
 
-let g:asyncrun_open = 12
-
 function! s:GetBuildCmd()
     let l:build_folder = '../' . fnamemodify(getcwd(), ':t') . "_build"
     if !isdirectory(l:build_folder)

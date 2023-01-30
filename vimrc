@@ -8,6 +8,7 @@ set shiftwidth=4
 set expandtab
 set nu
 set title
+set ruler
 set fileencodings=ucs-bom,utf-8,default,cp1252,cp1251,latin1
 
 filetype plugin indent on

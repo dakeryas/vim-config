@@ -17,6 +17,8 @@ filetype plugin indent on
 set splitright
 " Mapping for vsf to expand as 'vert sf' only in command context
 cnoreabbrev <expr> vsf getcmdtype() == ":" && getcmdline() == 'vsf' ? 'vert sf' : 'vsf'
+" Mapping for vsta to expand as 'vert stag' only in command context
+cnoreabbrev <expr> vsta getcmdtype() == ":" && getcmdline() == 'vsta' ? 'vert stag' : 'vsta'
 
 " Highlighting all searches
 set hlsearch

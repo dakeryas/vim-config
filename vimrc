@@ -59,6 +59,11 @@ let g:asyncrun_save=2
 " AsyncRun calls :copen before with specified height
 let g:asyncrun_open = 12
 
+"Add fzf vim's runtime path
+if exists('$HOMEBREW_PREFIX')
+    exe 'set rtp+=' . $HOMEBREW_PREFIX . '/opt/fzf'
+endif
+
 " Gutentags plugin
 let g:gutentags_cache_dir = "~/.cache/gutentags/"
 let g:gutentags_ctags_extra_args = ['--fields=+iaS', '--extra=+q', '--c++-kinds=+p']

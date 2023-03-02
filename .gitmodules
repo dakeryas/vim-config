@@ -43,3 +43,6 @@
 [submodule "pack/vendor/start/vim-notmuch-address.git"]
 	path = pack/vendor/start/vim-notmuch-address.git
 	url = https://github.com/adborden/vim-notmuch-address.git
+[submodule "pack/vendor/start/vim-lumen"]
+	path = pack/vendor/start/vim-lumen
+	url = https://github.com/vimpostor/vim-lumen

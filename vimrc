@@ -1,3 +1,4 @@
+set history=400
 set viminfo+=:400
 
 set background=dark

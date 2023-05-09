@@ -55,7 +55,7 @@ set wildmenu
 set path+=**
 
 " Ignore object files when completing filenames
-set wildignore+=*.o,*.d
+set wildignore+=*.o,*.d,*.pyc
 
 " AsyncRun saves all buffers upon running
 let g:asyncrun_save=2

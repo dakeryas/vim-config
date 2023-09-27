@@ -46,3 +46,6 @@
 [submodule "pack/vendor/start/vim-lumen"]
 	path = pack/vendor/start/vim-lumen
 	url = https://github.com/vimpostor/vim-lumen
+[submodule "pack/vendor/start/sideways.vim"]
+	path = pack/vendor/start/sideways.vim
+	url = https://github.com/AndrewRadev/sideways.vim

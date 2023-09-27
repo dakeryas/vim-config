@@ -15,4 +15,4 @@ function! s:RunMain()
   call asyncrun#run('', {}, command)
 endfunction
 
-map <silent> <F5> :update \| :call <SID>RunMain() <CR>
+noremap <silent> <F5> :update \| :call <SID>RunMain() <CR>

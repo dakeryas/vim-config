@@ -74,6 +74,9 @@ nnoremap cxl :SidewaysRight<cr>
 " Gutentags plugin
 let g:gutentags_cache_dir = "~/.cache/gutentags/"
 let g:gutentags_ctags_extra_args = ['--fields=+iaS', '--extra=+q', '--c++-kinds=+p']
+ 
+" Run ripgrep on current word
+nnoremap <silent> <leader>r :Rg<cr>
 
 " Move to next ALE error
 nnoremap <silent> <leader>j :ALENext()<cr>

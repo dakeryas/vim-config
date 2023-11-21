@@ -36,8 +36,8 @@ execute printf("nnoremap <silent> n n:call HLNext(%d, %d)<cr>", s:blink_length, 
 execute printf("nnoremap <silent> N N:call HLNext(%d, %d)<cr>", s:blink_length, s:blink_freq)
 execute printf("nnoremap <silent> * *:call HLNext(%d, %d)<cr>", s:blink_length, s:blink_freq)
 
-" Disable legacy Ex mode and open command line history instead
-nnoremap Q q:
+" Disable legacy Ex mode and close quickfix instead
+nnoremap Q :ccl<cr>
 
 " Leave Insert but move back to last Insert mode cursor position (via mark ^)
 inoremap jk <ESC>`^

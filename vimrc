@@ -44,6 +44,7 @@ inoremap jk <ESC>`^
 " AZERTY keyboard mappings
 nnoremap ç \
 nnoremap è ^
+map <space> <leader>
 
 " Allow to type whilst showing matches, show menu even for one item
 set completeopt=longest,menuone
@@ -76,7 +77,7 @@ let g:gutentags_cache_dir = "~/.cache/gutentags/"
 let g:gutentags_ctags_extra_args = ['--fields=+iaS', '--extra=+q', '--c++-kinds=+p']
  
 " Run ripgrep on current word
-nnoremap <silent> <leader>r :Rg<cr>
+nnoremap <silent> <leader>g :Rg<cr>
 
 " Move to next ALE error
 nnoremap <silent> <leader>j :ALENext()<cr>

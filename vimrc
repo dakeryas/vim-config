@@ -10,6 +10,7 @@ set expandtab
 set nu
 set title
 set ruler
+set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,default,cp1252,cp1251,latin1
 
 filetype plugin indent on

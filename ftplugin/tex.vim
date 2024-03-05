@@ -40,3 +40,7 @@ nnoremap Q :call TeX_fmt()<CR>
 let g:vimtex_compiler_latexmk = {
     \ 'build_dir' : 'build',
     \}
+
+let g:ale_linters_ignore = {
+      \   'tex': ['lacheck'],
+      \}

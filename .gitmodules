@@ -52,3 +52,6 @@
 [submodule "/home/valerian.sibille/.vim/pack/vendor/start/vim-systemd-syntax"]
 	path = /home/valerian.sibille/.vim/pack/vendor/start/vim-systemd-syntax
 	url = https://github.com/wgwoods/vim-systemd-syntax
+[submodule "pack/vendor/start/ale"]
+	path = pack/vendor/start/ale
+	url = https://github.com/dense-analysis/ale

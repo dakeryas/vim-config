@@ -55,3 +55,6 @@
 [submodule "pack/vendor/start/papercolor-theme"]
 	path = pack/vendor/start/papercolor-theme
 	url = https://github.com/NLKNguyen/papercolor-theme.git
+[submodule "pack/vendor/start/ale"]
+	path = pack/vendor/start/ale
+	url = https://github.com/dense-analysis/ale

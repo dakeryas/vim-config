@@ -49,3 +49,6 @@
 [submodule "pack/vendor/start/vim-plugin-AnsiEsc"]
 	path = pack/vendor/start/vim-plugin-AnsiEsc
 	url = https://github.com/powerman/vim-plugin-AnsiEsc.git
+[submodule "pack/vendor/start/ale"]
+	path = pack/vendor/start/ale
+	url = https://github.com/dense-analysis/ale

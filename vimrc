@@ -81,8 +81,8 @@ let g:gutentags_ctags_extra_args = ['--fields=+iaS', '--extra=+q', '--c++-kinds=
 nnoremap <silent> <leader>g :Rg<cr>
 
 " Move to next ALE error
-nnoremap <silent> <leader>j :ALENext()<cr>
-nnoremap <silent> <leader>k :ALEPrevious()<cr>
+ nnoremap <silent> <leader>j :ALENext()<cr>
+ nnoremap <silent> <leader>k :ALEPrevious()<cr>
 
 " Automatically open quickfix window for :make :vimgrep...
 autocmd QuickFixCmdPost [^l]* nested cwindow

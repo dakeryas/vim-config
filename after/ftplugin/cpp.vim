@@ -18,7 +18,7 @@ nmap <F6> :call CurtineIncSw()<CR>
 
 let g:ale_linters_explicit = 1
 let g:ale_linters={
-      \ 'cpp': [ 'clang++' ]
+      \ 'cpp': [ 'g++', 'clangd' ]
       \ }
 let g:ale_cpp_clang_executable = 'clang++'
 let g:ale_cpp_cc_options = '-std=c++17 -Wall -Wextra -pedantic -I./include -I../include -I$ROOTSYS/include -I$HOME/Software/Geant4/include/Geant4/ -I$HOME/Software/RicochetSim/include -I$HOME/Software/RicochetSimAnaCuts/include'

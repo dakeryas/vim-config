@@ -26,3 +26,4 @@ let g:ale_fixers={
       \ 'cpp': [ 'clang-format']
       \ }
 let g:c_clangformat_use_local_file = 1
+set omnifunc=ale#completion#OmniFunc

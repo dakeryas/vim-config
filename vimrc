@@ -67,6 +67,8 @@ let g:asyncrun_open = 12
 "Add fzf vim's runtime path
 if exists('$HOMEBREW_PREFIX')
     exe 'set rtp+=' . $HOMEBREW_PREFIX . '/opt/fzf'
+elseif isdirectory("/usr/share/doc/fzf/examples")
+    set rtp+=/usr/share/doc/fzf/examples/
 endif
 
 " Sideways plugin mapping

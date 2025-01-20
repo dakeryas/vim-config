@@ -20,7 +20,6 @@ let g:ale_linters_explicit = 1
 let g:ale_linters={
       \ 'cpp': [ 'clang++', 'clangd' ]
       \ }
-let g:ale_cpp_clang_executable = 'clang++'
 let g:ale_c_build_dir_names = ['build', 'build_x64']
 let g:ale_fixers={
       \ 'cpp': [ 'clang-format']

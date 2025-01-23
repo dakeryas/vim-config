@@ -18,7 +18,7 @@ nmap <F6> :call CurtineIncSw()<CR>
 
 let g:ale_linters_explicit = 1
 let g:ale_linters={
-      \ 'cpp': [ 'clang++', 'clangd' ]
+      \ 'cpp': [ 'clangd' ]
       \ }
 let g:ale_c_build_dir_names = ['build', 'build_x64']
 let g:ale_fixers={

@@ -84,9 +84,17 @@ let g:gutentags_ctags_extra_args = ['--fields=+iaS', '--extra=+q', '--c++-kinds=
 " Run ripgrep on current word
 nnoremap <silent> <leader>g :Rg<cr>
 
-" Move to next ALE error
- nnoremap <silent> <leader>j :ALENext()<cr>
- nnoremap <silent> <leader>k :ALEPrevious()<cr>
+" Global ALE settings
+let g:ale_floating_preview=1
+" General ALE bindings
+nnoremap <silent> <leader>j :ALENext()<cr>
+nnoremap <silent> <leader>k :ALEPrevious()<cr>
+nnoremap <silent> <leader>c :ALECodeAction<cr>
+nnoremap <silent> <leader>* :ALEFindReferences -quickfix<cr>:copen<cr>
+nnoremap <silent> <leader>p :ALEHover<cr>
+" Replace ctags's binding
+nnoremap <silent> <C-]> :ALEGoToDefinition()<cr>
+nnoremap <silent> <C-W><C-]> :sp <cr>:ALEGoToDefinition<cr>
 
 " Automatically open quickfix window for :make :vimgrep...
 autocmd QuickFixCmdPost [^l]* nested cwindow

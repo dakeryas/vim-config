@@ -88,7 +88,7 @@ let g:ale_floating_preview=1
 nnoremap <silent> <leader>j :ALENext()<cr>
 nnoremap <silent> <leader>k :ALEPrevious()<cr>
 nnoremap <silent> <leader>c :ALECodeAction<cr>
-nnoremap <silent> <leader>* :ALEFindReferences<cr>
+nnoremap <silent> <leader>* :ALEFindReferences -quickfix<cr>:copen<cr>
 nnoremap <silent> <leader>p :ALEHover<cr>
 " Replace ctags's binding
 nnoremap <silent> <C-]> :ALEGoToDefinition()<cr>

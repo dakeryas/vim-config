@@ -92,6 +92,7 @@ nnoremap <silent> <leader>* :ALEFindReferences -quickfix<cr>:copen<cr>
 nnoremap <silent> <leader>p :ALEHover<cr>
 " Replace ctags's binding
 nnoremap <silent> <C-]> :ALEGoToDefinition()<cr>
+nnoremap <silent> <C-W><C-]> :sp <cr>:ALEGoToDefinition<cr>
 
 " Automatically open quickfix window for :make :vimgrep...
 autocmd QuickFixCmdPost [^l]* nested cwindow

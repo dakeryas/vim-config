@@ -16,9 +16,6 @@
 [submodule "pack/vendor/start/vim-gutentags"]
 	path = pack/vendor/start/vim-gutentags
 	url = https://github.com/ludovicchabant/vim-gutentags.git
-[submodule "pack/vendor/start/AnsiEsc.vim"]
-	path = pack/vendor/start/AnsiEsc.vim
-	url = https://github.com/vim-scripts/AnsiEsc.vim
 [submodule "pack/vendor/start/asyncrun.vim"]
 	path = pack/vendor/start/asyncrun.vim
 	url = https://github.com/skywind3000/asyncrun.vim.git
@@ -49,3 +46,6 @@
 [submodule "pack/vendor/start/sideways.vim"]
 	path = pack/vendor/start/sideways.vim
 	url = https://github.com/AndrewRadev/sideways.vim
+[submodule "pack/vendor/start/vim-plugin-AnsiEsc"]
+	path = pack/vendor/start/vim-plugin-AnsiEsc
+	url = https://github.com/powerman/vim-plugin-AnsiEsc.git

@@ -82,9 +82,8 @@ let g:gutentags_ctags_extra_args = ['--fields=+iaS', '--extra=+q', '--c++-kinds=
 " Run ripgrep on current word
 nnoremap <silent> <leader>g :Rg<cr>
 
-" Move to next ALE error
-nnoremap <silent> <leader>j :ALENext()<cr>
-nnoremap <silent> <leader>k :ALEPrevious()<cr>
+" Terminal mappings:
+:tnoremap <Esc> <C-\><C-n>
 
 " Automatically open quickfix window for :make :vimgrep...
 autocmd QuickFixCmdPost [^l]* nested cwindow

@@ -49,6 +49,9 @@
 [submodule "pack/vendor/start/vim-plugin-AnsiEsc"]
 	path = pack/vendor/start/vim-plugin-AnsiEsc
 	url = https://github.com/powerman/vim-plugin-AnsiEsc.git
-[submodule "/home/valerian.sibille/.vim/pack/vendor/start/vim-systemd-syntax"]
-	path = /home/valerian.sibille/.vim/pack/vendor/start/vim-systemd-syntax
+[submodule "pack/vendor/start/vim-systemd-syntax"]
+	path = pack/vendor/start/vim-systemd-syntax
 	url = https://github.com/wgwoods/vim-systemd-syntax
+[submodule "pack/vendor/start/papercolor-theme"]
+	path = pack/vendor/start/papercolor-theme
+	url = https://github.com/NLKNguyen/papercolor-theme.git

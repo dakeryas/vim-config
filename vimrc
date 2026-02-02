@@ -1,7 +1,9 @@
 set history=400
 set viminfo+=:400
 
+set termguicolors
 set background=dark
+colorscheme PaperColor
 
 syntax on
 set tabstop=4
